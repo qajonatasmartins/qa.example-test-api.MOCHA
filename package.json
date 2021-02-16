@@ -1,0 +1,19 @@
+{
+  "name": "mocha-chai-api",
+  "version": "1.0.0",
+  "description": "automation-api-mocha-chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "unitests",
+    "apitests"
+  ],
+  "author": "Jonatas Martins Faria",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
