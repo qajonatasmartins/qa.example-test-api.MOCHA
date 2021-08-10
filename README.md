@@ -3,7 +3,23 @@ Projeto de automação API com node, mocha e chai
 
 # Intalação
 
-npm install
+`npm i`
+## Executando os testes
+
+- **All** `npm run test`
+- **Health Check** `npm run healthCheck` 
+- **Acceptance** `npm run acceptance` 
+- **Contract** `npm run contract` 
+- **Functional** `npm run functional` 
+
+## Tipos de teste de API
+
+- **Health Check**: Garantir que o endpoint está respondendo;
+- **Acceptance**: Garantir que um conjunto de endpoints funcionam como na ui;
+- **Contract**: Garantir que o endpoint não teve seus atributos alterados;
+- **Functional**: Garantir que o endpoint funciona ou apresenta os resultados de falha esperados.
+
+**Link:** https://pt.slideshare.net/elias.nogueira/de-a-mxima-cobertura-nos-seus-testes-de-api
 
 # Libs
 
