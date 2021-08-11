@@ -5,12 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --exit",
-    "healthCheck": "mocha ./test/healthCheck/*.js --exit --reporter nyan",
-    "acceptance": "mocha ./test/acceptance/*.js --exit",
-    "contract": "mocha ./test/contract/*.js contract --exit",
-    "functional": "mocha ./test/functional/*.js --exit",
+    "test": "mocha ./test/**/*.js --exit --reporter mochawesome --parallel --reporter-options autoOpen=true",
+    "healthCheck": "mocha ./test/healthCheck/*.js --exit --reporter mochawesome --parallel  autoOpen=true",
+    "acceptance": "mocha ./test/acceptance/*.js --exit --reporter mochawesome --parallel  autoOpen=true",
+    "contract": "mocha ./test/contract/*.js contract --exit --reporter mochawesome --parallel  autoOpen=true",
+    "functional": "mocha ./test/functional/*.js --exit --reporter mochawesome --parallel  autoOpen=true",
     "allure": "allure serve ./allure-results",
+    "mochawesome": "mocha ./mochawesome-report/ --reporter-options autoOpen=true",
     "babel": "index.js"
   },
   "keywords": [
@@ -29,9 +30,12 @@
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "express": "^4.17.1",
-    "mocha": "^9.0.3"
+    "mocha": "^9.0.3",
+    "mochawesome": "^6.2.2",
+    "mochawesome-report-generator": "^5.2.0"
   },
   "dependencies": {
+    "chai-json-schema": "^1.5.1",
     "mocha-allure-reporter": "^1.4.0"
   }
 }
